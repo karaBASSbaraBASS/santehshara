@@ -1,0 +1,27 @@
+/* header */
+
+.headerIconLink {
+	width: 40px;
+	height: 40px;
+	padding: 10px; 
+	svg g use{
+		transition: all 0.3s;
+		fill: #888888;
+	}
+	svg g {
+		opacity: 1;
+	}
+	&:hover {
+		svg g use{
+			fill: red;
+		}
+	} 
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (max-width: 576px) {
+
+}
+/* media */
+
+/* header end */

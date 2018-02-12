@@ -1,0 +1,103 @@
+/* allTexts */
+.bigTitle {
+	color: $contrast-deep;
+	font-family: $heading-font-family;
+	font-size: 72px;
+	font-weight: 700;
+}
+h2 {
+	color: $contrast-deep;
+	font-family: $heading-font-family;
+	font-size: 36px;
+	font-weight: 700;
+	margin-bottom: 35px;
+}
+.modelNameText span,
+p {
+	color: $text-regular;
+	font-family: $main-font-family;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+	word-wrap: break-word;
+}
+.modelNameText span {
+	display: block;
+}
+.modelNameText {
+	margin-bottom: 30px;
+}
+.priceText span {
+	color: $text-regular;
+	font-family: $main-font-family;
+	font-size: 18px;
+	font-weight: 500;
+}
+.sale:before {
+	content: "АКЦИЯ";
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	padding: 18px;
+	background-color: $contrast-hilited;
+	color: #ffffff;
+	font-family: $main-font-family;
+	font-size: 12px;
+	font-weight: 500;
+	transform: rotateX(0);
+	transition: transform 1s;
+}
+h3,
+.sectionSubtitle a,
+.foterMenuLink,
+.subMenuItems a,
+.captionText span {
+	font-family: $main-font-family;
+	font-size: 12px;
+	font-weight: 400;
+	color: #fff;
+	text-align: left;
+}
+.captionText span {
+	color: $text-regular;
+	line-height: 20px;
+}
+.sectionSubtitle a {
+	color: $text-regular;
+	text-transform: uppercase;
+}
+.sectionSubtitle a:hover,
+.foterMenuLink:hover,
+.subMenuItems a:hover {
+	text-decoration: underline;
+}
+.foterMenuLink,
+.menuItemsColumn h3 {
+	text-transform: uppercase;
+}
+
+.textBlock	{
+	margin-left: 100px;
+}
+.rights {
+	color: #ffffff;
+	font-family: $main-font-family;
+	font-size: 10px;
+	font-weight: 400;
+	margin-top: auto;
+	text-align: left;
+}
+.textCenterWrap {
+	max-width: 77%;
+    margin: 0 auto; 
+}
+.textRightWrap {
+	max-width: 430px;
+	margin-left: auto; 
+}
+@media (max-width: 1200px) { 
+	.bigTitle {
+		font-size: calc(72px - 3vw);
+	}
+}
+/* allTexts end */

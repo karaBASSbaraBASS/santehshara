@@ -1,0 +1,73 @@
+/* hot offer start */
+.hotOfferRow {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.productCardWrap {
+	width: 50%;
+	display: flex;
+	flex-direction: row;
+}
+.productCard {
+	width: 50%;
+	border: 2px solid $borders;
+	position: relative;
+	cursor: pointer;
+	&:hover {
+		border: 2px solid $text-brightest;
+	}
+}
+.productColumn {
+	max-width: 280px;
+	margin: 0 auto;
+	padding: 20px 10px 40px 10px; 
+}
+.captionText {
+	margin-bottom: 20px;
+}
+.captionText span{
+	display: block;
+}
+.addtoCartWrap {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	padding: 18px;
+	background-color: $contrast-deep;
+	transform: rotateY(0);
+	transition: transform 0.5s, background-color 0.3s;
+	svg {
+		width: 19px;
+		height: 16px;
+	}
+}
+.addToCart:hover .addtoCartWrap {
+	transform: rotateY(180deg);
+	background-color: $contrast-hilited;
+}
+.sale:hover:before {
+	transform: rotateX(360deg);
+}
+
+@media (max-width: 850px) {
+	#hotOfferCaptionOrder {
+		order: 0; 
+	}
+	.productCardWrap {
+		width: 100%;
+	}
+	#hotItemsOrder {
+		order: 1;
+	}
+}
+
+@media (max-width: 425px) {
+	.productCard {
+		width: 100%;
+	}
+	.productCardWrap {
+		flex-wrap: wrap;
+	}
+}
+/* hot offer end */
